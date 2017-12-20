@@ -1,0 +1,22 @@
+{
+  "name": "allye",
+  "version": "1.0.0",
+  "description": "Our story",
+  "main": "allye.js",
+  "scripts": {
+    "build": "webpack"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/surunzi/allye.git"
+  },
+  "author": "redhoodsu",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/surunzi/allye/issues"
+  },
+  "homepage": "https://github.com/surunzi/allye#readme",
+  "devDependencies": {
+    "webpack": "^3.10.0"
+  }
+}
