@@ -1,0 +1,27 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background: #000;
+}
+
+#music {
+    position: fixed;
+    width: 100%;
+    left: 0;
+    bottom: 0;
+    opacity: 0;
+    transition: opacity 0.3s;
+}
+
+#music:hover {
+    opacity: 1;
+}
+
+#scene {
+    position: fixed;
+    width: 100%;
+    height: 100%;
+}

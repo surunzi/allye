@@ -4,7 +4,19 @@
   "description": "Our story",
   "main": "allye.js",
   "scripts": {
-    "build": "webpack"
+    "build": "webpack",
+    "dev": "webpack --watch",
+    "serve": "nws -p 3000"
+  },
+  "eustia": {
+    "music": {
+      "files": "music/index.js",
+      "output": "music/util.js"
+    },
+    "allye": {
+      "files": "src/**/*.js",
+      "output": "src/util.js"
+    }
   },
   "repository": {
     "type": "git",
@@ -20,6 +32,10 @@
     "babel-core": "^6.26.0",
     "babel-loader": "^7.1.2",
     "babel-preset-env": "^1.6.1",
+    "css-loader": "^0.28.7",
+    "nws": "^1.1.1",
+    "proton-js": "^2.2.2",
+    "style-loader": "^0.19.1",
     "webpack": "^3.10.0"
   }
 }

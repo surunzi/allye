@@ -3,7 +3,7 @@ var path = require('path');
 module.exports = {
     entry: './src/index',
     output: {
-        path: path.resolve(__dirname, './dist'),
+        path: path.resolve(__dirname),
         filename: 'allye.js'
     },
     module: {
@@ -17,6 +17,15 @@ module.exports = {
                         presets: ['env']
                     }
                 }
+            }
+        ],
+        rules: [
+            {
+                test: /\.css$/,
+                use: [
+                    { loader: "style-loader" },
+                    { loader: "css-loader" }
+                ]
             }
         ]
     }
